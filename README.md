@@ -1,16 +1,14 @@
-#Purpose
+# Purpose
 
 Evaluate hand-written mathematical expression on android appplication.
 
-#Implementation Details
+# Implementation Details
 
-##Pipeline
+## Image Processing
 
-###Image Processing
+## Build Machine Learning Model
 
-###Build Machine Learning Model
-
--Machine Learning Library
+### Machine Learning Library
 
 We build our hand-written letter recogition model using **Tensorflow** library.
 
@@ -18,11 +16,11 @@ To predict samples on android environment using tensorflow(on android applicatio
 
 Our development tool is android studio, and initial setting with [This Article](https://omid.al/posts/2017-02-20-Tutorial-Build-Your-First-Tensorflow-Android-App.html) has no problem to us.
 
--Dataset
+### Dataset
 
 MNIST + ETC
 
--Model Description
--Validation
--Model Performance
+### Model Description
+### Validation
+### Model Performance
 
