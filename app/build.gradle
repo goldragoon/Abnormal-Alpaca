@@ -2,8 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 27
-    
-
+    buildToolsVersion "27.0.3"
 
     defaultConfig {
         applicationId "mobile.media.abnormalalpaca.app"
@@ -11,8 +10,6 @@ android {
         targetSdkVersion 27
         versionCode 1
         versionName "1.0"
-
-
     }
 
     buildTypes {
@@ -22,16 +19,10 @@ android {
        }
     }
 
-    // sourceSets block for linking with tensorflow library
-    sourceSets {
-        main {
-            jniLibs.srcDirs = ['libs']
-        }
-    }
-
 }
 
 dependencies {
     implementation project(':feature')
     implementation project(':base')
+    implementation project(':openCVLibrary341')
 }

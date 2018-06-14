@@ -1,1 +1,2 @@
 include ':feature', ':app', ':base', ':instantapp'
+include ':openCVLibrary341'

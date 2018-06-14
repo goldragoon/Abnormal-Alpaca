@@ -1,5 +1,5 @@
 apply plugin: 'com.android.feature'
-
+def nativeBuildSystem = 'none'
 android {
     compileSdkVersion 27
     defaultConfig {
@@ -18,10 +18,12 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation project(':base')
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
-    
+    implementation project(':openCVLibrary341')
+
+    compile 'org.tensorflow:tensorflow-android:+'
 }
